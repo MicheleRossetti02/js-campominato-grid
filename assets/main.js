@@ -3,29 +3,12 @@
 
 
 // selexione il bottone
-let bottone1 = document.querySelector(".aqua")
+let bottone = document.querySelector(".btn")
 
 let container = document.querySelector(".container")
 
-// assegno un azione al bottone
-bottone1.addEventListener("click", function(){
-
     // assegno un numero alle caselle
-    let numero_caselle_1 = 101;
-    let numero_caselle_2 = 82;
-    let numero_caselle_3 = 50;
-    
-    // richiamo la function
-    
-    
 
-    casellegenerator(numero_caselle_1, container);
-    casellegenerator(numero_caselle_2, container);
-    casellegenerator(numero_caselle_3, container);
-
-
-
-    
 
     // funzione che genera le caselle
     function casellegenerator(numero_caselle, containerEl) {
@@ -40,6 +23,25 @@ bottone1.addEventListener("click", function(){
         }
         
     }
+
+// assegno un azione al bottone
+bottone.addEventListener("click", function(){
+
+
+    let numero_caselle_1 = 101;
+    // let numero_caselle_2 = 82;
+    // let numero_caselle_3 = 50;
+
+    //richiamo la function
+    // tabella 10x10
+    casellegenerator(numero_caselle_1, container);
+    // tabella 9x9
+    // casellegenerator(numero_caselle_2, container);
+    // // tabella 7x7
+    // casellegenerator(numero_caselle_3, container);
+
+    
+
 
     // faccio una lista delle celle usate
     let listaCelle = document.querySelectorAll(".casella");
@@ -59,6 +61,12 @@ bottone1.addEventListener("click", function(){
 
     
 })
+
+//  const tabella1 = document.getElementById('griglia').value =1;
+// function setselctor(numero_caselle, containerEl) {
+    
+// }
+
 
 
 
