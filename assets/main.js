@@ -10,8 +10,7 @@ bottone.addEventListener("click", function(){
 
     // struttura del container
     let container = document.querySelector(".container")
-    let casella ='<div class="casella"> </div>';
-    let listaCelle = document.getElementsByClassName("casella");
+    let casella =`<div class="casella">  </div>`;
 
     // assegno un numero alle caselle
     let numero_caselle = 100;
@@ -19,12 +18,14 @@ bottone.addEventListener("click", function(){
     // richiamo la function
     casellegenerator(numero_caselle, casella, container);
     
-    
+
+    // funzione che genera le caselle
     function casellegenerator(numero_caselle, casellaMarkUp, containerEl) {
         
         for (let i = 0; i < numero_caselle; i++) {
             
             containerEl.innerHTML += casellaMarkUp;
+            // casellaMarkUp.innerText += numero_caselle;
         }
         
     }
