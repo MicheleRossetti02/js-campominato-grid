@@ -10,38 +10,19 @@ let container = document.querySelector(".container")
 // assegno un azione al bottone
 bottone1.addEventListener("click", function(){
 
-    // // struttura del container
-    // let container = document.querySelector(".container")
-    // let casella =`<div class="casella">   </div>`;
-
-    // // assegno un numero alle caselle
-    // let numero_caselle = 100;
-    
-    // // richiamo la function
-    // casellegenerator(numero_caselle, casella, container);
-    
-
-    // // funzione che genera le caselle
-    // function casellegenerator(numero_caselle, casellaMarkUp, containerEl) {
-        
-    //     for (let i = 0; i < numero_caselle; i++) {
-            
-    //         containerEl.innerHTML += casellaMarkUp;
-    //         // casellaMarkUp.innerText += numero_caselle;
-    //     }
-        
-    // }
-
-    // container.classList.toggle("none")
-
-    
-
-    
     // assegno un numero alle caselle
-    let numero_caselle = 101;
+    let numero_caselle_1 = 101;
+    let numero_caselle_2 = 82;
+    let numero_caselle_3 = 50;
     
     // richiamo la function
-    casellegenerator(numero_caselle, container);
+    
+    
+
+    casellegenerator(numero_caselle_1, container);
+    casellegenerator(numero_caselle_2, container);
+    casellegenerator(numero_caselle_3, container);
+
 
 
     
@@ -76,121 +57,120 @@ bottone1.addEventListener("click", function(){
 
 
 
-
-
-
-
-
     
 })
 
 
 
 
-// selexione il bottone
-let bottone2 = document.querySelector(".violet")
+// // selexione il bottone
+// let bottone2 = document.querySelector(".violet")
 
-// assegno un azione al bottone
-bottone2.addEventListener("click", function(){
+// // assegno un azione al bottone
+// bottone2.addEventListener("click", function(){
 
 
 
-   // struttura del container
-    let container = document.querySelector(".container")
+//    // struttura del container
+//     let container = document.querySelector(".container")
 
-    // assegno un numero alle caselle
-    let numero_caselle = 82;
+//     // assegno un numero alle caselle
+//     let numero_caselle = 82;
     
-    // richiamo la function
-    casellegenerator(numero_caselle, container);
-    
-
-    // funzione che genera le caselle
-    function casellegenerator(numero_caselle, containerEl) {
-        
-        for (let i = 1; i < numero_caselle; i++) {
-
-
-            let casella =`<div class="casella_2 violet"> ${i}  </div>`;
-            containerEl.innerHTML += casella;
-
-            // casellaMarkUp.innerText += numero_caselle;
-        }
-        
-    }
-
-    let listaCelle = document.querySelectorAll(".casella_2");
-
-    for (let i = 0; i < listaCelle.length; i++) {
-        let number = i+1;
-        const casellaAttuale = listaCelle[i];
-        casellaAttuale.addEventListener("click", function(){
-            console.log('Ho cliccato sulla casella ' + number);
-            casellaAttuale.classList.toggle("violet")
-            casellaAttuale.classList.toggle("viola")
-        })
-        
-    }
-
-
-
-
-
-    
-})
-
-
-
-
-// selexione il bottone
-let bottone3 = document.querySelector(".green")
-
-// assegno un azione al bottone
-bottone3.addEventListener("click", function(){
-
-
-
-
-   // struttura del container
-    let container = document.querySelector(".container")
-
-    // assegno un numero alle caselle
-    let numero_caselle = 50;
-    
-    // richiamo la function
-    casellegenerator(numero_caselle, container);
+//     // richiamo la function
+//     casellegenerator(numero_caselle, container);
     
 
-    // funzione che genera le caselle
-    function casellegenerator(numero_caselle, containerEl) {
+//     // funzione che genera le caselle
+//     function casellegenerator(numero_caselle, containerEl) {
         
-        for (let i = 1; i < numero_caselle; i++) {
+//         for (let i = 1; i < numero_caselle; i++) {
 
 
-            let casella =`<div class="casella_3 green"> ${i}  </div>`;
-            containerEl.innerHTML += casella;
+//             let casella =`<div class="casella_2 violet"> ${i}  </div>`;
+//             containerEl.innerHTML += casella;
 
-            // casellaMarkUp.innerText += numero_caselle;
-        }
+//             // casellaMarkUp.innerText += numero_caselle;
+//         }
         
-    }
+//     }
 
+//     let listaCelle = document.querySelectorAll(".casella_2");
 
-    let listaCelle = document.querySelectorAll(".casella_3");
-
-    for (let i = 0; i < listaCelle.length; i++) {
-        let number = i+1;
-        const casellaAttuale = listaCelle[i];
-        casellaAttuale.addEventListener("click", function(){
-            console.log('Ho cliccato sulla casella ' + number);
-            casellaAttuale.classList.toggle("green")
-            casellaAttuale.classList.toggle("verde")
-        })
+//     for (let i = 0; i < listaCelle.length; i++) {
+//         let number = i+1;
+//         const casellaAttuale = listaCelle[i];
+//         casellaAttuale.addEventListener("click", function(){
+//             console.log('Ho cliccato sulla casella ' + number);
+//             casellaAttuale.classList.toggle("violet")
+//             casellaAttuale.classList.toggle("viola")
+//         })
         
-    }
+//     }
+
 
 
 
 
     
-})
+// })
+
+
+
+
+
+
+
+
+// // selexione il bottone
+// let bottone3 = document.querySelector(".green")
+
+// // assegno un azione al bottone
+// bottone3.addEventListener("click", function(){
+
+
+
+
+//    // struttura del container
+//     let container = document.querySelector(".container")
+
+//     // assegno un numero alle caselle
+//     let numero_caselle = 50;
+    
+//     // richiamo la function
+//     casellegenerator(numero_caselle, container);
+    
+
+//     // funzione che genera le caselle
+//     function casellegenerator(numero_caselle, containerEl) {
+        
+//         for (let i = 1; i < numero_caselle; i++) {
+
+
+//             let casella =`<div class="casella_3 green"> ${i}  </div>`;
+//             containerEl.innerHTML += casella;
+
+//             // casellaMarkUp.innerText += numero_caselle;
+//         }
+        
+//     }
+
+
+//     let listaCelle = document.querySelectorAll(".casella_3");
+
+//     for (let i = 0; i < listaCelle.length; i++) {
+//         let number = i+1;
+//         const casellaAttuale = listaCelle[i];
+//         casellaAttuale.addEventListener("click", function(){
+//             console.log('Ho cliccato sulla casella ' + number);
+//             casellaAttuale.classList.toggle("green")
+//             casellaAttuale.classList.toggle("verde")
+//         })
+        
+//     }
+
+
+
+
+    
+// })
