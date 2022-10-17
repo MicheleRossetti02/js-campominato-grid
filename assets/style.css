@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-color: bisque;
-}
+} */
 .selector{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -15,6 +15,20 @@ body{
     width: 1200px;
     margin: 0 auto;
 
+}
+.btn   {
+    
+    border: 1px solid grey;
+    padding: 5px 10px;
+}
+.btn.aqua{
+    background-color: aqua;
+}
+.btn.violet{
+    background-color: blueviolet;
+}
+.btn.green{
+    background-color: chartreuse;
 }
 .container{
     max-width: 1200px;
@@ -27,5 +41,31 @@ body{
     background-color: aqua;
     width: calc(100% /10);
     aspect-ratio: 1/1;
-    border: 1px solid black;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
+.casella_2{
+    background-color: blueviolet;
+    width: calc(100% /9);
+    aspect-ratio: 1/1;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.casella_3{
+    background-color: chartreuse;
+    width: calc(100% /7);
+    aspect-ratio: 1/1;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
