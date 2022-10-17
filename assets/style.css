@@ -21,14 +21,23 @@
     border: 1px solid grey;
     padding: 5px 10px;
 }
-.btn.aqua{
+.aqua{
     background-color: aqua;
 }
-.btn.violet{
+.blue{
+    background-color: blue;
+}
+.violet{
+    background-color:violet ;
+}
+.viola{
     background-color: blueviolet;
 }
-.btn.green{
+.green{
     background-color: chartreuse;
+}
+.verde{
+    background-color: green;
 }
 .container{
     max-width: 1200px;
@@ -38,7 +47,7 @@
     padding-bottom: 2rem;
 }
 .casella{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: calc(100% /10);
     aspect-ratio: 1/1;
     border: 1px solid white;
@@ -48,7 +57,7 @@
     color: black;
 }
 .casella_2{
-    background-color: blueviolet;
+    /* background-color: violet; */
     width: calc(100% /9);
     aspect-ratio: 1/1;
     border: 1px solid white;
@@ -58,7 +67,7 @@
     color: black;
 }
 .casella_3{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     width: calc(100% /7);
     aspect-ratio: 1/1;
     border: 1px solid white;
@@ -67,5 +76,7 @@
     align-items: center;
     color: black;
 }
-
+.none{
+    display: none;
+}
 
